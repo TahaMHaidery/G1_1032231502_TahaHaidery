@@ -15,7 +15,7 @@ function ViewStudents() {
   }, []);
 
   const handleDelete = async (id) => {
-    await fetch(`http://localhost:500/student/delete/${id}`, {
+    await fetch(`http://localhost:5000/student/delete/${id}`, {
       method: "DELETE",
     });
     fetchData();
